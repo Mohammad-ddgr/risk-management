@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk Management Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📊 Risk Management Calculator</h2>
+
+    <label for="balance">Account Balance ($):</label>
+    <input type="number" id="balance" placeholder="e.g. 1000">
+
+    <label for="risk">Risk (%):</label>
+    <input type="number" id="risk" placeholder="e.g. 2">
+
+    <label for="sl">Stop Loss (pips):</label>
+    <input type="number" id="sl" placeholder="e.g. 30">
+
+    <label for="pair">Select Pair:</label>
+    <select id="pair"></select>
+
+    <button onclick="calculateLot()">Calculate</button>
+
+    <div id ="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
